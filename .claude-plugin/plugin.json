@@ -1,0 +1,8 @@
+{
+  "name": "deck-skills",
+  "description": "Grill the brief, then build a great single-file HTML slide deck with real captured charts and a clean PDF.",
+  "skills": [
+    "./skills/prep-the-deck",
+    "./skills/build-the-deck"
+  ]
+}
