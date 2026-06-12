@@ -6,7 +6,7 @@ description: Build a great single-file HTML slide deck from a locked brief. Wrap
 Build the deck from the locked brief. If there is no brief, run `prep-the-deck` first. Output is one self-contained HTML file that runs in any browser, plus a PDF.
 
 ## Step 0 — load the engine
-Use the **frontend-slides** engine for the mechanics: zero-dependency single-file HTML, the viewport-fitting law (every slide is 100vh, no in-slide scroll, clamp everything), anti-AI-slop motion, and PowerPoint import. Read [ENGINE.md](./ENGINE.md). Repo: https://github.com/zarazhangrui/frontend-slides
+The **frontend-slides** engine is bundled in [`./engine/`](./engine/) (MIT, by zarazhangrui), so there is nothing else to install. It gives you the mechanics: zero-dependency single-file HTML, the viewport-fitting law (every slide is 100vh, no in-slide scroll, clamp everything), anti-AI-slop motion, 12 themes, and PowerPoint import. Read [ENGINE.md](./ENGINE.md), and include `engine/viewport-base.css` in the deck.
 
 ## Step 1 — hook the openers
 Treat the cover and every section opener as a hook. Draft 3-5 options each, pick the sharpest, write the rest of the slide downstream of it. A label like "Section 2" or "Our Data" wastes the slot. A strong cover on an average deck beats a weak cover on a strong deck.

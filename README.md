@@ -9,6 +9,8 @@ Built for people tired of AI-slop decks: tiny text, invented charts, fifty slide
 - **prep-the-deck** — interviews you relentlessly, one question at a time, until the brief is locked. No deck gets built on a vague brief.
 - **build-the-deck** — builds to a real quality bar: viewport-fitting, readable from the back of the room, real captured charts only (never invented graphs), hooked openers, verified rendering, and a clean PDF.
 
+The full [frontend-slides](https://github.com/zarazhangrui/frontend-slides) engine is bundled inside `build-the-deck/engine/` (MIT), so one install gives you everything: the viewport-fitting base, 12 themes, animation patterns, PowerPoint import, and PDF export. No second download.
+
 ## Install
 
 You need an AI coding agent (Claude Code, Cursor, Codex, or similar). Pick whichever option fits your setup.
@@ -66,7 +68,7 @@ Most decks fail before a single slide is designed, because nobody pinned down th
 
 ## Built on
 
-- The **frontend-slides** engine for the single-file HTML mechanics and viewport fitting: https://github.com/zarazhangrui/frontend-slides
+- The **frontend-slides** engine, vendored into `skills/build-the-deck/engine/` (MIT, by zarazhangrui), for the single-file HTML mechanics, viewport fitting, themes, and PowerPoint import: https://github.com/zarazhangrui/frontend-slides
 - The **grill** pattern from Matt Pocock's skills: https://github.com/mattpocock/skills
 
 ## Make them your own

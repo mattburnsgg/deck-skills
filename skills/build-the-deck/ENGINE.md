@@ -1,13 +1,15 @@
 # The engine: frontend-slides
 
-The mechanics come from the frontend-slides engine. Repo: https://github.com/zarazhangrui/frontend-slides
+The mechanics come from the frontend-slides engine, vendored into `./engine/` so there is nothing else to install (MIT, by zarazhangrui, see `engine/NOTICE.md`). Upstream: https://github.com/zarazhangrui/frontend-slides
 
-Install it as a plugin, or read these files from it and fold them into your deck:
-- `viewport-base.css` — the viewport-fitting base. Locks html and body to the viewport, makes every `.slide` 100vh (and 100dvh), and sets `overflow: hidden` so nothing spills. One change: raise its type floors to meet the legibility bar in QUALITY.md. Its defaults run small.
-- `html-template.md` — base document structure.
-- `animation-patterns.md` — entrance and transition motion.
-- `scripts/extract-pptx.py` — import an existing PowerPoint.
-- `scripts/export-pdf.sh` — a PDF export helper.
+Read and use these from `./engine/`:
+- `engine/viewport-base.css` — the viewport-fitting base. Locks html and body to the viewport, makes every `.slide` 100vh (and 100dvh), and sets `overflow: hidden` so nothing spills. Include it in the deck. One change: raise its type floors to meet the legibility bar in QUALITY.md. Its defaults run small.
+- `engine/html-template.md` — base document structure.
+- `engine/animation-patterns.md` — entrance and transition motion.
+- `engine/STYLE_PRESETS.md` — 12 prebuilt visual themes to start from.
+- `engine/frontend-slides-guide.md` — the engine's full guide: content-density caps and the viewport law in detail.
+- `engine/scripts/extract-pptx.py` — import an existing PowerPoint.
+- `engine/scripts/export-pdf.sh` — a PDF export helper.
 
 ## The non-negotiable: viewport fitting
 Every slide is exactly one viewport tall, with no internal scroll. Build each slide to fit at large type. If it does not fit, cut content. Do not shrink the font.
